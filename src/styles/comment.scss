@@ -1,0 +1,280 @@
+.comment {
+  background-color: #fff;
+  padding: 120px 0;
+
+  .opinion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      color: rgb(119, 119, 119);
+      line-height: 1.7;
+      text-align: center;
+    }
+
+    .owl-stage-outer {
+      height: 265px;
+    }
+
+    .owl-item {
+      margin: 2px 0 0 2px;
+    }
+
+    &_comment {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 80px;
+
+      p {
+        font-size: 14px;
+        line-height: 1.7;
+        margin: 0 0;
+        padding: 0 30px 0 20px;
+      }
+
+      &_user {
+        padding: 40px 10px 0 10px;
+        background-color: #f7fafc;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        &:hover {
+          background-color: rgb(255, 255, 255);
+          cursor: pointer;
+        }
+
+        p {
+          padding: 0 40px 0 20px;
+          text-align: left;
+        }
+
+        &_account {
+          text-align: left;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          margin: 30px 0;
+
+          &_name {
+            padding-left: 20px;
+
+            span {
+              font-size: 18px;
+              font-family: "Dosis", serif;
+              color: rgb(34, 34, 34);
+            }
+
+            p {
+              font-style: normal;
+              color: rgb(119, 119, 119);
+              width: 120px;
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .owl-carousel .owl-nav button.owl-prev {
+      width: 40px;
+      height: 40px;
+      background: url('../images/LeftArrow.png');
+      background-size: cover;
+      position: absolute;
+      top: 40%;
+      left: -5%;
+
+      &:hover {
+        background-image: url('../images/LeftArrow_2.png');
+        cursor: pointer;
+      }
+
+      span {
+        display: none;
+      }
+    }
+
+    .owl-carousel .owl-nav button.owl-next {
+      width: 40px;
+      height: 40px;
+      background: url('../images/RightArrow.png');
+      background-size: cover;
+      position: absolute;
+      top: 40%;
+      right: -5%;
+
+      &:hover {
+        background-image: url('../images/RightArrow_2.png');
+        cursor: pointer;
+      }
+
+      span {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-device-width: 1024px) {
+  .comment {
+    padding: 60px 0;
+
+    .opinion {
+      p {
+        width: 100%;
+        padding-bottom: 50px;
+      }
+
+      &_comment {
+        &_user {
+          padding: 40px 40px;
+
+          p {
+            font-size: 30px;
+            padding: 0;
+          }
+
+          &_account {
+            margin: 30px 0 0 0;
+
+            &_name {
+              p {
+                width: auto;
+              }
+
+              span {
+                font-size: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .comment .opinion .owl-stage-outer {
+    height: 450px;
+  }
+
+  .comment .opinion .owl-carousel .owl-nav button.owl-prev {
+    left: 0;
+    width: 75px;
+    height: 75px;
+  }
+
+  .comment .opinion .owl-carousel .owl-nav button.owl-next {
+    right: 0;
+    width: 75px;
+    height: 75px;
+  }
+}
+
+@media screen and (max-device-width: 768px) {
+  .comment {
+    .opinion {
+      &_comment {
+        &_user {
+          p {
+            font-size: 26px;
+          }
+
+          &_account {
+            &_name {
+              span {
+                font-size: 26px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .comment .opinion .owl-carousel .owl-nav button.owl-prev {
+    top: 30%;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    opacity: 0.7;
+  }
+
+  .comment .opinion .owl-carousel .owl-nav button.owl-next {
+    top: 30%;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    opacity: 0.7;
+  }
+
+  .comment .opinion .owl-stage-outer {
+    height: 350px;
+  }
+}
+
+@media screen and (max-device-width: 540px) {
+  .comment {
+    .opinion {
+      &_comment {
+        &_user {
+          p {
+            font-size: 20px;
+          }
+
+          &_account {
+            &_name {
+              span {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .comment .opinion .owl-carousel .owl-nav button.owl-prev {
+    width: 50px;
+    height: 50px;
+  }
+
+  .comment .opinion .owl-carousel .owl-nav button.owl-next {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-device-width: 320px) {
+  .comment {
+    padding: 30px 0;
+
+    .opinion {
+      p {
+        padding-bottom: 20px;
+      }
+
+      &_comment {
+        &_user {
+          p {
+            font-size: 16px;
+          }
+
+          &_account {
+            margin-top: 10px;
+
+            &_name {
+              span {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

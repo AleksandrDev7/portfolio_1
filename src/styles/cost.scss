@@ -1,0 +1,290 @@
+.cost {
+  padding: 120px 0;
+
+  .pricing {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    &_text {
+      p {
+        color: rgb(119, 119, 119);
+        line-height: 1.7;
+      }
+    }
+
+    &_list {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 80px;
+
+      &_position {
+        display: flex;
+        background-image: url('../images/passive.png');
+        height: 481px;
+        width: 250px;
+        padding: 20px 0 40px 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-image: url('../images/active.png');
+          box-shadow: 5px 3px 10px 5px rgb(230, 226, 231);
+          -webkit-transform: scale(1.05);
+          -ms-transform: scale(1.05);
+          transform: scale(1.05);
+          cursor: pointer;
+          transition: all 500ms ease-in-out;
+        }
+
+        &__promotion {
+          font-style: normal;
+          font-family: "Roboto", sans-serif;
+          color: rgb(170, 170, 170);
+          text-align: center;
+          padding: 30px 0 10px 0;
+          font-weight: 300;
+        }
+
+        &__title {
+          font-size: 20px;
+          font-family: "Dosis", sans-serif;
+          color: rgb(51, 51, 51);
+          padding-bottom: 20px;
+          font-weight: 600;
+        }
+
+        a {
+          display: flex;
+          padding: 10px 40px;
+          background-color: #fff;
+          border: 3px solid #eee;
+          border-radius: 18px;
+          font-family: "Roboto", sans-serif;
+          color: rgb(34, 34, 34);
+          font-weight: 600;
+        }
+
+        &:hover a {
+          background: linear-gradient(0.25turn, #fd712c, #f94f4c, #f31f78);
+          color: rgb(255, 255, 255);
+          border-color: #e1e1e1;
+          transition: all 500ms ease-in-out;
+        }
+
+        &_tag {
+          background-image: url('../images/BG-2.png');
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          width: 100%;
+          height: 120px;
+
+          & span {
+            font-size: 45px;
+            font-family: "Dosis", sans-serif;
+            color: rgb(51, 51, 51);
+            font-weight: 600;
+            position: relative;
+            top: 15%;
+
+            &::before {
+              vertical-align: top;
+              content: "$";
+              color: rgb(51, 51, 51);
+              font-size: 18px;
+              font-family: "Dosis", sans-serif;
+              font-weight: 600;
+            }
+
+            &::after {
+              content: "/m";
+              color: rgb(51, 51, 51);
+              font-size: 18px;
+              font-family: "Dosis", sans-serif;
+              font-weight: 600;
+            }
+          }
+        }
+
+        &:hover .pricing_list_position_tag {
+          background-image: url('../images/BG.png');
+          transition: all 500ms ease-in-out;
+        }
+
+        &:hover .pricing_list_position_tag span,
+        &:hover .pricing_list_position_tag span::before,
+        &:hover .pricing_list_position_tag span::after {
+          color: rgb(255, 255, 255);
+        }
+
+        &_text {
+          padding-top: 30px;
+
+          p {
+            color: rgb(119, 119, 119);
+            line-height: 2;
+            width: 180px;
+            padding-top: 5px;
+          }
+
+          p:nth-child(n+1) {
+            border-bottom: 2px dotted #eee;
+          }
+
+          p:nth-child(4) {
+            border-bottom: 2px dotted transparent;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-device-width: 1024px) {
+  .cost {
+    padding: 80px 0;
+
+    .pricing {
+      &_list {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 30px;
+
+        &_position {
+          height: auto;
+          margin: 10px;
+          width: 40%;
+
+          &__promotion {
+            font-size: 30px;
+          }
+
+          a {
+            font-size: 30px;
+          }
+
+          &__title {
+            font-size: 35px;
+          }
+
+          &_tag {
+            span {
+              font-size: 65px;
+            }
+          }
+
+          &_text {
+            p {
+              width: auto;
+              font-size: 32px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-device-width: 786px) {
+  .cost {
+    .pricing {
+      &_list {
+        &_position {
+          &__promotion {
+            font-size: 25px;
+          }
+
+          a {
+            font-size: 25px;
+          }
+
+          &__title {
+            font-size: 30px;
+          }
+
+          &_text {
+            p {
+              width: auto;
+              font-size: 26px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-device-width: 540px) {
+  .cost {
+    padding: 60px 0;
+
+    .pricing {
+      &_list {
+        &_position {
+          width: 70%;
+
+          &__promotion {
+            font-size: 20px;
+          }
+
+          a {
+            font-size: 20px;
+          }
+
+          &__title {
+            font-size: 25px;
+          }
+
+          &_tag {
+            span {
+              font-size: 50px;
+            }
+          }
+
+          &_text {
+            p {
+              width: auto;
+              font-size: 21px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-device-width: 320px) {
+  .cost {
+    .pricing {
+      &_list {
+        &_position {
+          &__promotion {
+            font-size: 18px;
+          }
+
+          a {
+            font-size: 18px;
+          }
+
+          &__title {
+            font-size: 20px;
+          }
+
+          &_text {
+            p {
+              width: auto;
+              font-size: 19px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

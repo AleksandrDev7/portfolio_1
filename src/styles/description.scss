@@ -1,0 +1,138 @@
+.description {
+  padding: 120px 0;
+
+  .about {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+
+    &_images {
+      display: flex;
+      justify-content: center;
+      max-width: 362px;
+      max-height: 469px;
+    }
+
+    &_text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 500px;
+
+      h2 {
+        text-align: left;
+      }
+
+      p {
+        color: rgb(119, 119, 119);
+        line-height: 1.7;
+        font-weight: 400;
+        text-align: left;
+        margin-bottom: 40px;
+      }
+
+      ul {
+        margin-left: 15px;
+
+        li {
+          list-style-image: url('../images/gal_2.png');
+          color: rgb(119, 119, 119);
+          line-height: 2;
+          margin: 10px;
+          padding-left: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-device-width: 1024px) {
+  .description {
+    padding-bottom: 80px;
+
+    .about {
+      flex-direction: column;
+
+      &_images {
+        margin-bottom: 80px;
+      }
+
+      &_text {
+        align-items: center;
+        width: 90%;
+
+        h2 {
+          text-align: center;
+          padding-bottom: 20px;
+        }
+
+        p {
+          text-align: center;
+        }
+
+        ul {
+          li {
+            font-size: 35px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-device-width: 768px) {
+  .description {
+    padding-bottom: 60px;
+
+    .about {
+      &_images {
+        margin-bottom: 80px;
+      }
+
+      &_text {
+        ul {
+          li {
+            font-size: 26px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-device-width: 540px) {
+  .description {
+    padding-bottom: 40px;
+
+    .about {
+      &_text {
+        ul {
+          li {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-device-width: 320px) {
+  .description {
+    padding-top: 40px;
+
+    .about {
+      &_images {
+        display: none;
+      }
+
+      &_text {
+        ul {
+          li {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}

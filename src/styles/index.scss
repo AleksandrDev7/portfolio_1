@@ -1,0 +1,100 @@
+@import "normalize.scss";
+@import "description.scss";
+@import "program.scss";
+@import "footer.scss";
+@import "carousel.scss";
+@import "header.scss";
+@import "comment.scss";
+@import "cost.scss";
+@import "advantage.scss";
+@import "cinema.scss";
+
+body {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrap {
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 54px;
+  font-family: "Dosis", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1.111;
+  text-align: left;
+}
+
+h2 {
+  font-size: 36px;
+  font-family: "Dosis", sans-serif;
+  color: rgb(34, 34, 34);
+  line-height: 0.833;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.fixed-page {
+  overflow: hidden;
+}
+
+@media screen and (max-device-width: 1024px) {
+  p {
+    font-size: 35px;
+  }
+
+  h1 {
+    font-size: 65px;
+  }
+
+  h2 {
+    font-size: 55px;
+  }
+}
+
+@media screen and (max-device-width: 768px) {
+  p {
+    font-size: 26px;
+  }
+
+  h1 {
+    font-size: 45px;
+  }
+
+  h2 {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-device-width: 540px) {
+  p {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-device-width: 320px) {
+  p {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+}

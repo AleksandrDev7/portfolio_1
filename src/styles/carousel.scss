@@ -1,0 +1,134 @@
+.carousel {
+  background-color: #f7fafc;
+  padding: 100px 0 100px 0;
+
+  .slider {
+    &_text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 70px;
+
+      p {
+        color: rgb(119, 119, 119);
+        line-height: 2;
+        text-align: center;
+        width: 650px;
+      }
+    }
+
+    .owl-carousel .owl-nav button.owl-prev {
+      width: 40px;
+      height: 40px;
+      background: url('../images/LeftArrow.png');
+      background-size: cover;
+      position: absolute;
+      top: 40%;
+      left: -5%;
+
+      &:hover {
+        background-image: url('../images/LeftArrow_2.png');
+        cursor: pointer;
+      }
+
+      span {
+        display: none;
+      }
+    }
+
+    .owl-carousel .owl-nav button.owl-next {
+      width: 40px;
+      height: 40px;
+      background: url('../images/RightArrow.png');
+      background-size: cover;
+      position: absolute;
+      top: 40%;
+      right: -5%;
+
+      &:hover {
+        background-image: url('../images/RightArrow_2.png');
+        cursor: pointer;
+      }
+
+      span {
+        display: none;
+      }
+    }
+  }
+
+  :hover .owl-carousel {
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-device-width: 1024px) {
+  .carousel {
+    padding: 80px 0 100px 0;
+
+    .slider {
+      &_text {
+        h2 {
+          padding-bottom: 20px;
+        }
+
+        p {
+          width: 90%;
+        }
+      }
+    }
+  }
+
+  .carousel .slider .owl-carousel .owl-item img {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .carousel .slider .owl-carousel .owl-nav button.owl-prev {
+    left: 0%;
+    width: 75px;
+    height: 75px;
+  }
+
+  .carousel .slider .owl-carousel .owl-nav button.owl-next {
+    right: 0%;
+    width: 75px;
+    height: 75px;
+  }
+}
+
+@media screen and (max-device-width: 768px) {
+  .carousel {
+    padding: 60px 0 60px 0;
+  }
+
+  .carousel .slider .owl-carousel .owl-item img {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .carousel .slider .owl-carousel .owl-nav button.owl-prev {
+    width: 60px;
+    height: 60px;
+  }
+
+  .carousel .slider .owl-carousel .owl-nav button.owl-next {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (max-device-width: 540px) {
+  .carousel .slider .owl-carousel .owl-item img {
+    width: 70%;
+  }
+
+  .carousel .slider .owl-carousel .owl-nav button.owl-prev {
+    width: 55px;
+    height: 55px;
+  }
+
+  .carousel .slider .owl-carousel .owl-nav button.owl-next {
+    width: 55px;
+    height: 55px;
+  }
+}

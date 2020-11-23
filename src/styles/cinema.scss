@@ -1,0 +1,45 @@
+.cinema {
+  width: 100%;
+  height: 600px;
+}
+
+.start {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  .blackout {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+  }
+
+  video {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: fill;
+    opacity: 0.5;
+  }
+
+  .start__video {
+    width: 75px;
+    height: 75px;
+    background-image: url('../images/Play_icon.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 65px;
+    border: 0;
+
+    &:hover {
+      background-image: url('../images/Play_icon_active.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+  }
+}

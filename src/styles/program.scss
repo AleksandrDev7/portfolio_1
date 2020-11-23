@@ -1,0 +1,217 @@
+.program {
+  background-image: url('../images/ground.png');
+  background-size: 100% 100%;
+  padding: 100px 0;
+
+  .download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      color: rgb(255, 255, 255);
+      line-height: 0.667;
+      margin-bottom: 80px;
+      font-weight: 500;
+    }
+
+    &_system {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+
+      &_choice {
+        display: flex;
+        flex-direction: row;
+        width: 32%;
+        height: 100px;
+        background-color: #fff;
+        cursor: pointer;
+        -webkit-transition: all 0.1s ease;
+        -moz-transition: all 0.1s ease;
+        -o-transition: all 0.1s ease;
+        transition: all 0.1s ease;
+
+        &:hover {
+          -webkit-transform: scale(1.05);
+          -ms-transform: scale(1.05);
+          transform: scale(1.05);
+          cursor: pointer;
+        }
+
+        &_picture {
+          background-color: #f7fafc;
+          width: 30%;
+
+          &__picture-1,
+          &__picture-2,
+          &__picture-3 {
+            position: relative;
+            top: 25%;
+            left: 30%;
+            width: 40%;
+            height: 50%;
+          }
+
+          &__picture-1 {
+            background-image: url('../images/Mac_icon.png');
+            background-size: 100% 100%;
+          }
+
+          &__picture-2 {
+            background-image: url('../images/Android_icon.png');
+            background-size: 100% 100%;
+          }
+
+          &__picture-3 {
+            background-image: url('../images/Windows_icon.png');
+            background-size: 100% 100%;
+          }
+        }
+
+        &:hover .download_system_choice_picture__picture-1 {
+          background-image: url('../images/Mac_icon2.png');
+        }
+
+        &:hover .download_system_choice_picture__picture-2 {
+          background-image: url('../images/Android_icon2.png');
+        }
+
+        &:hover .download_system_choice_picture__picture-3 {
+          background-image: url('../images/Windows_icon2.png');
+        }
+
+        &_text {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          margin-left: 15px;
+
+          span {
+            font-size: 20px;
+            font-family: "Dosis", sans-serif;
+            color: rgb(34, 34, 34);
+            font-weight: 800;
+            line-height: 1.5;
+            text-align: left;
+          }
+
+          p {
+            font-size: 12px;
+            font-family: "Roboto", sans-serif;
+            color: rgb(119, 119, 119);
+            line-height: 1.5;
+            font-weight: 400;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-device-width: 1024px) {
+  .program {
+    .download {
+      &_system {
+        flex-direction: column;
+
+        &_choice {
+          margin-top: 20px;
+          width: 80%;
+          height: 200px;
+
+          &_text {
+            span {
+              font-size: 40px;
+            }
+
+            p {
+              font-size: 35px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-device-width: 768px) {
+  .program {
+    .download {
+      &_system {
+        &_choice {
+          height: 200px;
+
+          &_text {
+            span {
+              font-size: 30px;
+            }
+
+            p {
+              font-size: 26px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-device-width: 540px) {
+  .program {
+    padding: 60px 0;
+
+    .download {
+      h2 {
+        margin-bottom: 40px;
+      }
+
+      &_system {
+        &_choice {
+          height: 150px;
+          width: 90%;
+
+          &_text {
+            span {
+              font-size: 25px;
+            }
+
+            p {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-device-width: 320px) {
+  .program {
+    .download {
+      h2 {
+        margin-bottom: 20px;
+      }
+
+      &_system {
+        &_choice {
+          height: 100px;
+
+          &_text {
+            span {
+              font-size: 20px;
+            }
+
+            p {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
